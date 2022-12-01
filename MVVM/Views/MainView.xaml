@@ -6,24 +6,24 @@
         xmlns:local="clr-namespace:MVVM.Views"
         xmlns:ViewModels="clr-namespace:MVVM.ViewModels"
         mc:Ignorable="d"
-        Title="MainView" Height="250" Width="400" WindowStyle="None">
+        Title="MainView" Height="350" Width="400" >
     <Grid>
         <StackPanel HorizontalAlignment="Center">
 
             <ComboBox SelectedIndex="0" SelectedItem="{Binding SelectedCar}" DisplayMemberPath="Make" ItemsSource="{Binding Cars}" Margin="5"></ComboBox>
 
-            <TextBlock Text="Make"/>
-            <TextBlock Text="{Binding SelectedCar.Make}"/>
-            <TextBlock Text="Model"/>
-            <TextBlock Text="{Binding SelectedCar.Model}"/>
-            <TextBlock Text="Year"/>
-            <TextBlock Text="{Binding SelectedCar.Year}"/>
+            <TextBlock Text="Make" FontSize="20"/>
+            <TextBlock Text="{Binding SelectedCar.Make}" FontSize="20"/>
+            <TextBlock Text="Model" FontSize="20"/>
+            <TextBlock Text="{Binding SelectedCar.Model}" FontSize="20"/>
+            <TextBlock Text="Year" FontSize="20"/>
+            <TextBlock Text="{Binding SelectedCar.Year}" FontSize="20"/>
 
 
             <StackPanel Orientation="Horizontal">
-                <Button Background="Wheat" Margin="0 0 5 0" BorderThickness="0" Command = "{Binding ShowCommand}">Show</Button>
-                <Button Background="Wheat" Margin="5 0 5 0" BorderThickness="0" Command = "{Binding AddCommand}">Add</Button>
-                <Button Background="Wheat" Margin="5 0 0 0"  BorderThickness="0" Command = "{Binding EditCommand}">Edit</Button>
+                <Button Background="Wheat" Margin="0 0 5 0" FontSize="20" BorderThickness="0" Command = "{Binding ShowCommand}">Show</Button>
+                <Button Background="Wheat" Margin="5 0 5 0" FontSize="20" BorderThickness="0" Command = "{Binding AddCommand}">Add</Button>
+                <Button Background="Wheat" Margin="5 0 0 0" FontSize="20"  BorderThickness="0" Command = "{Binding EditCommand}">Edit</Button>
             </StackPanel>
         </StackPanel>
     </Grid>
